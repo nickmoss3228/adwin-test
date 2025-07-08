@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jura:wght@300..700&display=swap');
-/* #2581BE - blue*/
-/* #EAB308 - orange */
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -148,11 +146,6 @@ a{
   border-bottom-color: var(--primary-color);
 }
 
-/* .dropdown-menu-item:hover {
-  background-color: #f8f9fa;
-  color: #4A90E2;
-} */
-
 .dropdown-menu-item:last-child {
   border-bottom: none;
   margin-bottom: 0;
@@ -193,7 +186,6 @@ a{
 .CTA-button:focus {
   outline: none;
 }
-
 
 /* Overlay */
 .overlay {
@@ -380,7 +372,6 @@ a{
   transform: translateY(1px);
 }
 
-/* Agreement Text */
 .popup-agree {
   font-size: 16px;
   color: #666;
@@ -409,7 +400,6 @@ a{
 
 .hero-section__intro {
   margin-left: 1rem;
-  /* letter-spacing: 0.5px; */
   margin-top: 1rem;
   font-weight: 400;
   color:rgb(75, 75, 75) ;
@@ -475,12 +465,6 @@ h1 {
   line-height: 1.1;
 }
 
-/* #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-} */
-
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -543,10 +527,6 @@ button:focus-visible {
   }
 
   .hero-section__header{
-  /* font-family: Jura;
-  font-size: 90px;
-  margin: 1rem;
-  line-height: 4.5rem; */
   font-size: 10rem;
   line-height: 8rem;
   margin-top: 4rem;;
@@ -595,27 +575,25 @@ button:focus-visible {
   }
 }
 
-   /* Create the duck image as a pseudo-element */
   body::before {
     content: '';
     position: absolute;
     top: -4%;
     left: 20%;
     animation: float 3s ease-in-out infinite;
-    width: 850px; /* Adjust based on your image size */
-    height: 820px; /* Adjust based on your image size */
+    width: 850px; 
+    height: 820px; 
     background-image: url('./assets/duck.png');
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 2; /* Higher than 1st item but lower than the 2nd */
-    pointer-events: none; /* Allows clicks to pass through */
+    pointer-events: none; 
   }
 
   .container {
     max-width: 1400px;
     }
   .duck-list {
-    /* justify-content:center; */
     z-index: 5;
     cursor: pointer;
     justify-content: center;
@@ -688,29 +666,23 @@ button:focus-visible {
     flex-direction: row;
     justify-content: space-evenly;
     gap: 30px;
-  }
+    }
   .popup {
     padding: 32px;
     min-width: 420px;
-  }
+    }
 
   .desktop-nav .nav-item.active {
     color: var(--primary-color);
     border-bottom-color: var(--primary-color);
-  }
+    }
 
-  /* .nav-item__dropdown {
-    transform: rotate(90);
-    margin-left: 8px;
-    font-size: 24px;
-  }
-   */
   .header {
     padding: 15px 20px;
-  }
+    }
   
   .icons {
     gap: 2rem;
-  }
+    }
   }
 }

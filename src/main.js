@@ -23,7 +23,6 @@ if (isMenuOpen) {
 }
 }
 document.addEventListener('DOMContentLoaded', () => {
-    // const dropdown = document.getElementById('dropdown-menu');
     const overlay = document.getElementById('overlay');
     const menuIcon = document.querySelector('.menu-icon');
     
@@ -33,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Close dropdown when clicking overlay
     overlay.addEventListener('click', toggleMenu);
     
-    // Close dropdown with Escape key
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && isMenuOpen) {
             toggleMenu();
@@ -83,7 +81,6 @@ function closePopup() {
     document.body.style.overflow = '';
 }
 
-// Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function () {
     // Make sure popup is hidden on page load
     const overlay = document.getElementById('popup-overlay');
@@ -105,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 });
 
-// Add event listeners to CTA buttons
+// Event listeners to CTA buttons
 const desktopCTA = document.querySelector('.CTA-button-call.desktop-cta');
 if (desktopCTA) {
     desktopCTA.addEventListener('click', function (e) {
@@ -161,7 +158,7 @@ if (phoneInput) {
                 value = `+7 ${value.slice(0, 3)} ${value.slice(3, 6)} ${value.slice(6, 8)} ${value.slice(8, 10)}`;
             }
   
-            // Add visual feedback for incomplete numbers
+            // Visual feedback for incomplete numbers
             if (value.replace(/\D/g, '').length < 11) {
                 e.target.style.borderColor = '#ff6b6b';
                 e.target.setAttribute('data-incomplete', 'true');
@@ -211,7 +208,7 @@ if (phoneInput) {
         }
     });
 }
-// Name validation (new code following the same pattern)
+// Name validation
 if (nameInput) {
     nameInput.addEventListener('input', function (e) {
         const value = e.target.value.trim();
