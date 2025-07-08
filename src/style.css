@@ -129,6 +129,17 @@ body {
   font-size: 0.9rem;
   text-align: center;
   margin-bottom: 4px;
+  border-bottom: 1px solid transparent;
+}
+.dropdown-menu-item span {
+  border-bottom: 1px solid transparent;
+  transition: border-bottom-color 0.2s ease;
+  padding-bottom: 10px;
+}
+
+.dropdown-menu-item.active span,
+.dropdown-menu-item:hover span {
+  border-bottom-color: var(--primary-color);
 }
 
 a{
@@ -139,11 +150,10 @@ a{
 
 .dropdown-menu-item.active{
   color: var(--primary-color);
-  border-bottom-color: var(--primary-color);
 }
 
 .dropdown-menu-item:hover {
-  border-bottom-color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .dropdown-menu-item:last-child {
@@ -583,9 +593,11 @@ button:focus-visible {
     animation: float 3s ease-in-out infinite;
     width: 850px; 
     height: 820px; 
-    background-image: url('./assets/duck.png');
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-image: url('./assets/duck.png'), url('./assets/krya2.PNG');
+    /* background-size: contain; */
+    background-size: 850px 820px, 170px 150px; /* Size for each image */
+    background-position: 0 0, 40px 400px; /* Position for each image */
+    background-repeat: no-repeat, no-repeat;
     z-index: 2; /* Higher than 1st item but lower than the 2nd */
     pointer-events: none; 
   }
@@ -666,23 +678,23 @@ button:focus-visible {
     flex-direction: row;
     justify-content: space-evenly;
     gap: 30px;
-    }
+  }
   .popup {
     padding: 32px;
     min-width: 420px;
-    }
+  }
 
   .desktop-nav .nav-item.active {
     color: var(--primary-color);
     border-bottom-color: var(--primary-color);
-    }
+  }
 
   .header {
     padding: 15px 20px;
-    }
+  }
   
   .icons {
     gap: 2rem;
-    }
+  }
   }
 }
