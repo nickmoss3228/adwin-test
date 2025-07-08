@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DuckShop</title>
+  </head>
+  
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <img src="/logo.PNG" alt="logo"/>
+        </div>
+
+        <nav class="desktop-nav">
+          <a href="#" class="nav-item">Главная</a>
+          <a href="#" class="nav-item">Каталог 
+            <!-- <span class="nav-item__dropdown"> &#8964; </span> -->
+          </a>
+          <a href="#" class="nav-item">Блог</a>
+          <a href="#" class="nav-item">Отзывы</a>
+          <a href="#" class="nav-item">Контакты</a>
+        </nav>
+
+        <div class="icons">
+          <div class="cart-icon">🛒</div>
+          <button class="CTA-button-call desktop-cta">
+            Заказать обратный звонок
+          </button>
+          <div class="menu-icon">☰</div>
+          <div class="menu-open-icons" style="display: none;">
+            <div class="close-icon">&times;</div>
+          </div>
+        </div>
+      </header>
+
+      <div id="dropdown-menu" class="dropdown-menu">
+        <nav class="dropdown-content">
+          <a href="#" class="dropdown-menu-item">Главная</a>
+          <a href="#" class="dropdown-menu-item">Блог</a>    
+          <a href="#" class="dropdown-menu-item">Каталог</a>    
+          <a href="#" class="dropdown-menu-item">Отзывы</a>    
+          <a href="#" class="dropdown-menu-item">Контакты</a>   
+          <div class="dropdown-menu-button"> 
+            <button class="CTA-button-call">
+              Заказать обратный звонок
+            </button>
+          </div>
+        </nav>
+      </div>
+
+      <div class="overlay" id="overlay"></div>
+
+      <div class="hero-section">
+        <h1 class="hero-section__header">
+            <span class="hero-section__header-line_1">МНОГО</span>
+            <span class="hero-section__header-line_2">УТОЧЕК</span>
+        </h1>
+        <div class="hero-section__main">
+          <span class="hero-section__intro">Маленький друг найдётся для каждого в этом кряквенно жёлтом мире</span>
+            <button class="CTA-button">
+              Смотреть уточек
+            </button>  
+        </div>
+
+        <div class="duck-list"> 
+          <div class="duck-list__item">
+            <div class="duck-list__arrow">→</div>
+            <span class="duck-list__desc">Классические</span>
+          </div>
+          <div class="duck-list__item">
+            <div class="duck-list__arrow">→</div>
+           <span class="duck-list__desc">Уточки панки</span> 
+          </div>
+          <div class="duck-list__item">
+            <div class="duck-list__arrow">→</div> 
+            <span class="duck-list__desc">Супергерои</span>
+          </div>
+          <div class="duck-list__item">
+            <div class="duck-list__arrow">→</div> 
+            <span class="duck-list__desc">Милые</span>
+          </div>
+          <div class="duck-list__item">
+            <div class="duck-list__arrow">→</div>
+             <span class="duck-list__desc">Для детей</span>
+          </div>
+          <div class="duck-list__item">
+            <div class="duck-list__arrow">→</div> 
+            <span class="duck-list__desc">Взрослым</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="popup-overlay" id="popup-overlay">
+        <div id="popup" class="popup">
+          <div class="popup-close">&times;</div>
+          <div class="popup-content">
+            <div class="popup-field">
+              <label class="popup-label">Имя <span class="required">*</span></label>
+              <input type="text" class="popup-input" placeholder="Введите ваше имя" id="popup-name"/>
+            </div>
+            <div class="popup-field">
+              <label class="popup-label">Телефон <span class="required">*</span></label>
+              <input type="tel" class="popup-input" placeholder="+ 7 000 000 00 00" id="popup-phone">
+            </div>
+            <button class="popup-button">Отправить</button>
+            <p class="popup-agree">
+              Нажимая кнопку "Отправить", вы <br/> соглашаетесь с 
+              <a href="#" class="popup-link">политикой конфиденциальности</a> и 
+              <a href="#" class="popup-link"> договором оферты</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
