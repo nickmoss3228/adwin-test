@@ -666,6 +666,7 @@ button:focus-visible {
     position: absolute;
     left: 66%;
     top: 55%;
+    z-index: 10;
   }
   .hero-section__intro {
     width: 350px;
